@@ -12,13 +12,14 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="/css/card.css">
 
         <?= $this->headLink() ?>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="scotphp">
             <div class="row">
                 <div class="col-md-12">
                     <?= $this->flashMessenger()->renderAll() ?>
