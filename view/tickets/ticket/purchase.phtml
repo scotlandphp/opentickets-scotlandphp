@@ -7,12 +7,12 @@ $this->inlineScript()
      ->appendScript($this->stripeKey())
      ->appendFile('/js/card.js');
 
-$this->headLink()->appendStylesheet('/css/card.css');
 ?>
 
 <?= $this->render('tickets/ticket/_orderInformation', ['purchase' => $this->purchase]);?>
-<div class="row">
+
     <div class="col-md-6 col-xs-12">
+
         <?php $this->form->prepare();?>
         <form id="delegate-form" method="POST">
             <div class="panel panel-default">
@@ -161,9 +161,9 @@ $this->headLink()->appendStylesheet('/css/card.css');
             </div>
         </div>
     </div>
-</div>
+
 <div class="row">
     <div class="form-group col-md-offset-10 col-md-2 col-xs-offset-6 col-xs-2">
-        <button id="submit-payment" type="submit" class="btn btn-default">Complete Purchase</button>
+        <button id="submit-payment" type="submit" class="btn btn-scotphp">Complete Purchase</button>
     </div>
 </div>
