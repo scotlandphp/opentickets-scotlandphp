@@ -12,6 +12,7 @@ return [
             'tickets/ticket/complete' => __DIR__ . '/../view/tickets/ticket/complete.phtml',
             'tickets/ticket/manage' => __DIR__ . '/../view/tickets/ticket/manage.phtml',
             'tickets/ticket/purchase' => __DIR__ . '/../view/tickets/ticket/purchase.phtml',
+            'tickets/ticket/_orderInformation' => __DIR__ . '/../view/tickets/ticket/_orderInformation.phtml',
         ],
     ],
 ];
