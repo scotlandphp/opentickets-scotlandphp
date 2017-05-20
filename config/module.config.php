@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 return [
     'view_manager' => [
+        'display_not_found_reason' => false,
+        'display_exceptions' => false,
         'template_map' => [
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
             'email/receipt' => __DIR__ . '/../view/email/receipt.phtml',
@@ -16,7 +18,7 @@ return [
     ],
     'mailconf' => [
         'purchase' => [
-            'subject' => 'Your ScotlandPHP 2017 Ticket Receipt',
+            'subject' => 'Your ScotlandPHP Ticket Receipt',
             'from' => 'organisers@scotlandphp.co.uk',
         ],
     ],
