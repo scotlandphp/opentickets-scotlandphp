@@ -6,13 +6,18 @@ return [
     'view_manager' => [
         'template_map' => [
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
-            'error/404' => __DIR__ . '/../view/error/404.phtml',
-            'error/index' => __DIR__ . '/../view/error/index.phtml',
+            'email/receipt' => __DIR__ . '/../view/email/receipt.phtml',
             'tickets/ticket/select-tickets' => __DIR__ . '/../view/tickets/ticket/select-tickets.phtml',
             'tickets/ticket/complete' => __DIR__ . '/../view/tickets/ticket/complete.phtml',
             'tickets/ticket/manage' => __DIR__ . '/../view/tickets/ticket/manage.phtml',
             'tickets/ticket/purchase' => __DIR__ . '/../view/tickets/ticket/purchase.phtml',
             'tickets/ticket/_orderInformation' => __DIR__ . '/../view/tickets/ticket/_orderInformation.phtml',
+        ],
+    ],
+    'mailconf' => [
+        'purchase' => [
+            'subject' => 'Your ScotlandPHP 2017 Ticket Receipt',
+            'from' => 'organisers@scotlandphp.co.uk',
         ],
     ],
 ];
