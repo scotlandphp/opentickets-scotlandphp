@@ -22,4 +22,30 @@ return [
             'from' => 'organisers@scotlandphp.co.uk',
         ],
     ],
+    'form_elements' => [
+        'delegators' => [
+            \OpenTickets\Tickets\Form\ManageTicket::class => [
+                \OpenTickets\Tickets\Form\FormInputFilterDelegator::class,
+            ],
+        ],
+    ],
+    'input_filter_specs' => [
+        \OpenTickets\Tickets\Form\ManageTicket::class => [
+            'delegate' => [
+                'firstname' => [
+                    'required' => true,
+                    'validators' => [
+                        [
+                            'name' => \Zend\Validator\StringLength::class,
+                            'options' => [
+                                'min' => 3,
+                                'max' => 10,
+                            ],
+                        ],
+
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];
